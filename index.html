@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Can JS make burgers faster than McDonalds?</title>
+</head>
+<body>
+    <div class="main">
+        <div class="column">
+            <h2>Choose a burger: </h2>
+            <form>
+                <fieldset class="main-menu">
+                    <div>
+                        <input type="radio" name="burger" id="hamburger" value="hamburger">
+                        <label for="hamburger">Hamburger</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="burger" id="cheeseburger" value="cheeseburger">
+                        <label for="cheeseburger">Cheeseburger</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="burger" id="baconburger" value="baconburger">
+                        <label for="baconburger">Baconburger</label>
+                    </div>
+                </fieldset>
+                <button type="submit" class="order-button">Order burger</button>
+            </form>
+        </div>
+        <div class="column">
+            <div class="spinner-container" id="loading">
+                <div class="spinner"></div>
+                <p>Loading...</p>
+            </div>
+            <div class="logger" id="logger"></div>
+        </div>
+        <div class="column">
+            <h2>Result</h2>
+            <div class="burger-container" id="result">
+                <div class="burger" id="hamburger-display">
+                    <div class="bun top"></div>
+                    <div class="lettuce"></div>
+                    <div class="tomato"></div>
+                    <div class="patty"></div>
+                    <div class="bun bottom"></div>
+                </div>
+            </div>
+            <div class="burger cheeseburger" id="cheeseburger-display">
+                <div class="bun top"></div>
+                <div class="lettuce"></div>
+                <div class="cheese"></div>
+                <div class="tomato"></div>
+                <div class="patty"></div>
+                <div class="bun bottom"></div>
+            </div>
+    
+            <div class="burger baconburger" id="baconburger-display">
+                <div class="bun top"></div>
+                <div class="lettuce"></div>
+                <div class="bacon"></div>
+                <div class="patty"></div>
+                <div class="tomato"></div>
+                <div class="bun bottom"></div>
+            </div> 
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
